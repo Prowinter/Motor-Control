@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "qmc5883.h": "c",
+        "main.h": "c",
+        "stdio.h": "c",
+        "myiic.h": "c"
+    }
+}

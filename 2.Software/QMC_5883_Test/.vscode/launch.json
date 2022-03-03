@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "build/QMC_5883.elf",
+            "name": "Debug Microcontroller",
+            "request": "launch",
+            "type": "cortex-debug",
+            "showDevDebugOutput": false,
+            "servertype": "openocd",
+            "configFiles": [
+                "C:/openocd-0.10.0/scripts/interface/cmsis-dap.cfg",
+                "C:/openocd-0.10.0/scripts/target/stm32f4x.cfg"
+            ]
+        }
+
+    ]
+}

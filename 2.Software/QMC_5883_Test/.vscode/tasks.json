@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "make",
+            "problemMatcher":[
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "Build & Updata",
+            "type": "shell",
+            "command": "openocd",
+            "args": [
+                "-f",
+                "C:/openocd-0.10.0/scripts/interface/cmsis-dap.cfg",
+                "-f",
+                "C:/openocd-0.10.0/scripts/target/stm32f4x.cfg",
+                "-c",
+                "program build/QMC_5883.elf verify reset exit"
+            ],
+            "problemMatcher":[
+                "$gcc"
+            ],
+            "group": "build",
+            "dependsOn": "Build"
+        }
+    ]
+}
